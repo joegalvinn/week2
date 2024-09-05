@@ -119,3 +119,37 @@ console.log(city.cityTechCompany.locations[2]);
 
 //how do i access the method in the object
 console.log(city.greetVisitor());
+
+//object methods workshop
+const man = {
+  name: "Jacob",
+  age: 30,
+  favColour: "pineRed",
+  getAge: function () {
+    return man.age;
+  },
+  sayHi: function (name) {
+    console.log("hello " + name + "!");
+  },
+};
+
+const age = man.getAge();
+
+console.log(age);
+
+man.sayHi("brad");
+
+const book = {
+  name: "big bears bouncing.",
+  author: "Francis Janglo",
+  numberOfPages: 80,
+  advertDetails: function () {
+    console.log(
+      `The book you are viewing is called ${book.name} by ${book.author}. It is an very easy book with ${book.numberOfPages} pages.`
+    );
+  },
+};
+
+const advert = book.advertDetails();
+
+console.log(advert);

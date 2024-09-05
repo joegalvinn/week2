@@ -1,0 +1,22 @@
+* {
+  background-color: blanchedalmond;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+
+header {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: -1;
+  /*the last colum is represented by the number -1 */
+  grid-row-end: ;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
