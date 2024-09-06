@@ -1,0 +1,59 @@
+* {
+  background-color: cornflowerblue;
+}
+
+/* i am flexing header becase it is the parent of h1 */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: solid blue;
+  text-align: center;
+}
+
+/* adding meadia queries to specify rules for a wide screen */
+/* in this case, my media query rules will apply when the screen size is a minumum of 600px */
+@media all and (min-width: 600px) and (max-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .box {
+    height: 100px;
+    width: 100px;
+    font-size: 1.35rem;
+    border-radius: 20px;
+    border: solid blue;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: solid blue;
+    text-align: center;
+  }
+}
